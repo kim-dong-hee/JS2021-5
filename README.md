@@ -35,6 +35,9 @@ text = text ll "초기화합니다_2"
 
 console.log(text);
 
+![반복](https://user-images.githubusercontent.com/79896108/113471008-7ee5eb80-9494-11eb-82e3-c1844bc96452.PNG)
+
+![반복2](https://user-images.githubusercontent.com/79896108/113471022-8e653480-9494-11eb-8654-12b3ff53928e.PNG)
 
 
 # 김동희[201740107]
@@ -62,3 +65,4 @@ console.log(con1);
 배운내용
 
 
+![반복2](https://user-images.githubusercontent.com/79896108/113471015-860cf980-9494-11eb-80ae-69bdd400e5c7.PNG)
