@@ -14,16 +14,23 @@ break 문이 없더라면 멈추지않고 모두 실행
 
 . 짧은 초기화 조건문
 ll 연산자를 불이 아닌 자료에 사용할 경우
+
 A ll B 에서 A가 참이라면 A로 대치
+
 A ll B 에서 A가 거짓라면 B로 대치
 예제 
 //변수 선언
 let text;
 //짧은 초기화 조건문1
+
 text = text ll "초기화 합니다_1"
+
 console.log(text);
+
 //짧은 초기화 조건문2
+
 text = text ll "초기화합니다_2"
+
 console.log(text);
 
 
