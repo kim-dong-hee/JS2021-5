@@ -1,4 +1,114 @@
 # 김동희[201740107]
+## [05월 4일]
+>오늘 배운 내용
+Date 객체와 날짜
+날짜를 저장할 수 있고, 날짜와 관련된 메서드도 제공해주는 내장 객체 Date에 대해 알아봅시다
+
+Date 객체를 활용하면 생성 및 수정 시간을 저장하거나 시간을 측정할 수 있고, 현재 날짜를 출력하는 용도 등으로도 활용할 수 있습니다.
+
+객체 생성하기
+new Date()를 호출하면 새로운 Date 객체가 만들어지는데, new Date()는 다음과 같은 형태로 호출할 수 있습니다.
+
+new Date()
+인수 없이 호출하면 현재 날짜와 시간이 저장된 Date 객체가 반환됩니다.
+
+![image](https://user-images.githubusercontent.com/79896108/117543135-80d43900-b056-11eb-8da1-c738ce6f7a55.png)
+
+UTC 기준(UTC+0) 1970년 1월 1일 0시 0분 0초에서 milliseconds 밀리초(1/1000 초) 후의 시점이 저장된 Date 객체가 반환됩니다.
+
+![image](https://user-images.githubusercontent.com/79896108/117543150-9184af00-b056-11eb-9c86-dddafd5d17e7.png)
+
+1970년의 첫날을 기준으로 흘러간 밀리초를 나타내는 정수는 타임스탬프(timestamp) 라고 부릅니다.
+
+타임스탬프를 사용하면 날짜를 숫자 형태로 간편하게 나타낼 수 있습니다. new Date(timestamp)를 사용해 타임스탬프를 사용해 특정 날짜가 저장된 Date 객체를 손쉽게 만들 수 있고 date.getTime() 메서드를 사용해 Date 객체에서 타임스탬프를 추출하는 것도 가능합니다
+
+Array 객체
+
+- 배열을 관리할 수 있는 객체이다.
+
+- JavaScript의 배열은 Array객체이다.
+
+- toString : 쉼표(,)로 구분하여 배열이 관리하는 값들을 하나의 문자열로 만들어 반환한다.
+
+- join : 지정된 문자열을 구분하여 배열이 관리하는 값들을 하나의 문자열로 만들어 반환한다.
+
+- push : 배열 뒤에 새로운 맴버를 추가한다.
+
+- pop : 배열의 제일 마지막 맴버를 반환하고 제거한다.
+
+- shift : 배열의 제일 앞의 맴버를 반환하고 제거한다.
+
+- unshift : 배열의 제일 앞에 멤버를 추가한다.
+
+- sort : 배열이 관리하는 값을 오름차순으로 정렬한다.
+
+- reverse : 배열이 관리하는 값의 순서를 역순으로 정렬한다.
+
+<script>
+	var array1 = [10, 20, 30, 40, 50];
+
+	//쉼표로 구분된 배열보여준다
+	var a1 = array1.toString(); 
+	document.write("a1 : " + a1 + "<br/>");
+
+	//()안에 구분되는 문자
+	var a2 = array1.join("_")
+	document.write("a2 : " + a2 + "<br/>");
+
+
+	//배열을 늘리거나 줄이는 것이 가능
+	var a3 = [];
+	document.write("a3.length : " + a3.length + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");
+
+	a3[0] = 10;
+	a3[1] = 20;
+	document.write("a3.length : " + a3.length + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");
+	
+	//뒤에 추가
+	a3.push(30);
+	a3.push(40);
+	a3.push(50, 60, 70, 80, 90, 100);
+	document.write("a3.length : " + a3.length + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");
+
+	//마지막 꺼 반환과 제거
+	var a4 = a3.pop();
+	document.write("a4.length : " + a4.length + "<br/>");
+	document.write("a4 : " + a4 + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");
+
+	//처음 꺼 반환과 제거
+	var a5 = a3.shift();
+	document.write("a3.length : " + a3.length + "<br/>");
+	document.write("a5 : " + a5 + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");	
+
+	//앞에 추가
+	a3.unshift(10);
+	document.write("a3.length : " + a3.length + "<br/>");
+	document.write("a3 : " + a3 + "<br/>");
+
+	
+	var array3 = [50,30,10,20,40,30,80,90];
+	var array4 = ["다","바", "가", "나", "사", "바"];
+
+	//순서대로 정렬
+	array3.sort();
+	array4.sort();
+	document.write("array3 : " + array3 + "<br/>");
+	document.write("array4 : " + array4 + "<br/>");	
+
+	//순서 뒤집어서 정렬
+	array3.reverse();
+	array4.reverse();
+	document.write("array3 : " + array3 + "<br/>");
+	document.write("array4 : " + array4 + "<br/>");	
+
+</script>
+
+# 김동희[201740107]
 ## [04월 27일]
 >오늘 배운 내용
 1.객체 기본
