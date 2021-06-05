@@ -1,4 +1,35 @@
 # 김동희[201740107]
+## [06월 1일]
+>오늘 배운 내용
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    em { font-size: 12pt; line-height: 40pt;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var resultText = "";
+      var $searchEles = $('p, span, div.simpletext1');
+      resultText += "엘리먼트 개수: " + $searchEles.length + "\n"
+      $searchEles.each(function(){
+        resultText += $(this).text() + ", ";
+      });
+      // alert($.trim(resultText));
+      // alert($.trim(resultText));
+    });
+  </script>
+</head>
+<body>
+  <span>simple</span>
+  <div class="simpletext1">jQuery</div>
+  <div>basic</div>
+  <p>example</p>
+</body>
+</html>
+
+# 김동희[201740107]
 ## [05월 25일]
 >오늘 배운 내용
 
