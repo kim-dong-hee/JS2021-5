@@ -1,33 +1,54 @@
 # 김동희[201740107]
 ## [06월 1일]
 >오늘 배운 내용
-<!DOCTYPE html>
-<html>
-<head>
-  <style type="text/css">
-    em { font-size: 12pt; line-height: 40pt;}
-  </style>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var resultText = "";
-      var $searchEles = $('p, span, div.simpletext1');
-      resultText += "엘리먼트 개수: " + $searchEles.length + "\n"
-      $searchEles.each(function(){
-        resultText += $(this).text() + ", ";
-      });
-      // alert($.trim(resultText));
-      // alert($.trim(resultText));
-    });
-  </script>
-</head>
-<body>
-  <span>simple</span>
-  <div class="simpletext1">jQuery</div>
-  <div>basic</div>
-  <p>example</p>
-</body>
-</html>
+JQuery는 "유용한 자바스크립트를 모아놓은 집합체" 라고 할 수 있는데, 오늘 날 가장 인기있는 자바스크립트 라이브러리 중 하나이다. 
+
+이러한 JQuery는 일단 가장 눈에 띄는 장점을 가지고 있는것이 바로 자바스크립트보다 간결하게 쓸 수 있다는 점이다. 
+
+다음은 보통 일반적으로 쓰는 자바크립트의 언어이다. 
+
+document.getElementById("divId"); 
+document.getElementsByClassName("className");
+ 이 자바스크립트를 구문을 JQuery로 쓰게 되면 다음과 같다. 
+
+$("#divId");
+$(".className");
+한눈에 봐도 훨씬 간결하고 깔끔하게 쓸 수 있다는 것이 보일것이다. 
+
+
+이 외에도 ajax를 활용할 때에도 유용하게 쓸 수 있고, css를 통해 비교적 쉽게 페이지 내부에 접근할 수 있으며 다양한 애니메이션을 간편하게 사용할 수 있다는 장점 역시 가지고 있다. 
+
+Jquery 사용법
+
+JQuery를 사용하는 방법은 크게 2가지가 있다.
+
+1. 파일을 다운받아서 프로젝트 폴더에 넣고 참조하는 방법
+
+2. CND을 이용한 참조
+
+파일을 다운받아서 넣어줘도 상관없지만 오늘은 2번의 CND를 이용한 참조방법​을 통해 JQuery를 사용해 보고자 한다. 
+
+CND를 이용한 참조방법은 내 폴더있는 파일들 말고 다른 사이트에서 참조해서 쓰는 방법에 해당한다. 
+
+때문에 다운받는 방법보다 훨씬 간편하게 사용할 수 있다. 
+
+먼저 JQuery를 사용하기 위한 셋팅 방법은 다음 코드 중 한 가지를 HTML파일의 HEAD태그 안에 적어주기만 하면 된다. 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+//아래 주소는 JQuery에서 제공하는 최근 버전의 url이다.
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+간단한 JQuery 문법
+
+자 앞서 언급한 링크주소를 HTML 안에 넣어주게 되면 이제 JQuery를 쓸 준비가 된 상태이다.
+
+$(선택자).동작함수();
+JQuery문법의 기본이 되는 $()선택자이다. 
+
+기호는 JQuery를 의미하고, JQuery에 접근할 수 있게 해주는 식별자이다. 
+
+이러한 선택자를 사용하여 원하는 HTML요소를 선택하고, 동작함수를 정의하여 선택된 요소에 원하는 동작을 설정한다. 
+
+보통$() 함수를 통해 생성된 요소를 JQuery의 객체라고 한다. 
 
 # 김동희[201740107]
 ## [05월 25일]
